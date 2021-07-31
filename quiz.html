@@ -14,7 +14,7 @@
   <body>
     <h1>On sóc políticament?</h1>
     <hr />
-    <h2 style="text-align: center" id="question-number">Carregant...</h2>
+    <h2 style="text-align: center;" id="question-number">Carregant...</h2>
     <p class="question" id="question-text"></p>
     <button class="button stronglyAgree" onclick="next_question(1.0)">
       Molt d'acord
@@ -44,7 +44,7 @@
       name="user-data"
       action="/results.html"
       method="GET"
-      style="display:none"
+      style="display: none;"
       netlify-honeypot="bot-field"
       data-netlify="true"
     >
@@ -54,6 +54,7 @@
       <input type="hidden" name="age" value="" />
       <input type="hidden" name="gender" value="" />
       <input type="hidden" name="province" value="" />
+      <input type="hidden" name="population" value="" />
       <input type="hidden" name="assesment" value="" />
       <input type="hidden" name="e" value="" />
       <input type="hidden" name="d" value="" />
