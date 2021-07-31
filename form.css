@@ -1,0 +1,59 @@
+form {
+  display: block;
+  margin: 3rem auto;
+}
+
+.form-row {
+  margin: 0 0 0.5em;
+  font-size: 1.5em;
+  display: flex;
+  align-items: flex-start;
+}
+
+.form-row strong {
+  font-weight: 700;
+  flex: 0 0 auto;
+  width: 13rem;
+  padding: 0.4em 0 0;
+}
+
+.form-row .group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input[type=radio] {
+  display:none;
+}
+
+.form-row label {
+  padding: 0.2em 0.5em;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin:4px;
+  min-height: 1em;
+}
+
+label.selected {
+  background: orange;
+}
+
+form.show-errors .error-message {
+  display: block;
+}
+
+.error-message {
+  display: none;
+  text-align: center;
+  font-size: 1.6em;
+  background: pink;
+  border: 1px solid red;
+  padding: 0.5em 3em;
+  border-radius: 10px;
+  margin: auto;
+  width: 50%;
+  color: red;
+}

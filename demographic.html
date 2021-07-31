@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="form.css" rel="stylesheet" type="text/css" />
+    <title>On sóc políticament?</title>
+    <link rel="icon" type="x-icon" href="icon.png" />
+    <link rel="shortcut icon" type="x-icon" href="icon.png" />
+    <meta charset="utf-8" />
+    <script>
+      version = "Test Edition #1"; //Remember to update this before making changes to the test itself!
+    </script>
+  </head>
+
+  <body>
+    <h1 onclick="location.href='/'">On sóc políticament?</h1>
+    <h2>Dades sociodemogràfiques</h2>
+
+    <p class="center">
+      <strong>
+        Aquestes dades són completament confidencials i es faran servir per a
+        una descripció de la mostra poblacional consultada.
+      </strong>
+    </p>
+
+    <form action="/quiz.html" name="demographic" method="GET">
+      <div class="form-row">
+        <strong>Provincia:</strong>
+        <div class="group">
+          <label
+            >Barcelona <input type="radio" name="province" value="Barcelona"
+          /></label>
+          <label
+            >Girona <input type="radio" name="province" value="Girona"
+          /></label>
+          <label
+            >Lleida <input type="radio" name="province" value="Lleida"
+          /></label>
+          <label
+            >Tarragona <input type="radio" name="province" value="Tarragona"
+          /></label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <strong>Edat:</strong>
+        <div class="group">
+          <label
+            >Menys de 19 <input type="radio" name="age" value="<19"
+          /></label>
+          <label
+            >De 20 a 29 <input type="radio" name="age" value="20-29"
+          /></label>
+          <label
+            >De 30 a 39 <input type="radio" name="age" value="30-39"
+          /></label>
+          <label
+            >De 40 a 49 <input type="radio" name="age" value="40-49"
+          /></label>
+          <label
+            >De 50 a 59 <input type="radio" name="age" value="50-59"
+          /></label>
+          <label
+            >De 60 a 69 <input type="radio" name="age" value="60-69"
+          /></label>
+          <label>Més de 70 <input type="radio" name="age" value="70+" /></label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <strong>Gènere:</strong>
+        <div class="group">
+          <label>Home <input type="radio" name="gender" value="male" /></label>
+          <label
+            >Dona <input type="radio" name="gender" value="female"
+          /></label>
+          <label
+            >Altres <input type="radio" name="gender" value="other"
+          /></label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <strong>Com et posicionaries políticament?:</strong>
+        <div class="group">
+          Esquerra
+          <label><input type="radio" name="assesment" value="-15" /></label>
+          <label><input type="radio" name="assesment" value="-10" /></label>
+          <label><input type="radio" name="assesment" value="-5" /></label>
+          <label><input type="radio" name="assesment" value="0" /></label>
+          <label><input type="radio" name="assesment" value="5" /></label>
+          <label><input type="radio" name="assesment" value="10" /></label>
+          <label><input type="radio" name="assesment" value="15" /></label>
+          Dreta
+        </div>
+      </div>
+
+      <button
+        class="button start"
+        type="submit"
+        onclick="return validate(this)"
+      >
+        Comença!
+      </button>
+
+      <div class="error-message">Falta informació.</div>
+    </form>
+    <script src="demographic.js"></script>
+  </body>
+</html>

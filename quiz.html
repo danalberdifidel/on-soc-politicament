@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>On sóc políticament?</title>
+    <link rel="icon" type="x-icon" href="icon.png" />
+    <link rel="shortcut icon" type="x-icon" href="icon.png" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>On sóc políticament?</h1>
+    <hr />
+    <h2 style="text-align: center" id="question-number">Carregant...</h2>
+    <p class="question" id="question-text"></p>
+    <button class="button stronglyAgree" onclick="next_question(1.0)">
+      Molt d'acord
+    </button>
+    <br />
+    <button class="button agree" onclick="next_question(0.5)">D'acord</button>
+    <br />
+    <button class="button neutral" onclick="next_question( 0.0)">
+      Neutral/No n'estic segur
+    </button>
+    <br />
+    <button class="button disagree" onclick="next_question(-0.5)">
+      En desacord
+    </button>
+    <br />
+    <button class="button stronglyDisagree" onclick="next_question(-1.0)">
+      Molt en desacord
+    </button>
+    <br />
+    <button class="small_button" onclick="prev_question()" id="back_button">
+      Enrere
+    </button>
+
+    <button class="small_button_off" id="back_button_off">Enrere</button><br />
+
+    <form
+      name="user-data"
+      action="/results.html"
+      method="GET"
+      style="display:none"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+    >
+      <input type="hidden" name="form-name" value="user-data" />
+      <input type="hidden" name="date" value="" />
+
+      <input type="hidden" name="age" value="" />
+      <input type="hidden" name="gender" value="" />
+      <input type="hidden" name="province" value="" />
+      <input type="hidden" name="assesment" value="" />
+      <input type="hidden" name="e" value="" />
+      <input type="hidden" name="d" value="" />
+      <input type="hidden" name="g" value="" />
+      <input type="hidden" name="s" value="" />
+    </form>
+
+    <!-- JavaScript for the test itself -->
+    <script src="questions.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>

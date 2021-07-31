@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>On sóc politicament?</title>
+    <link rel="icon" type="x-icon" href="icon.png" />
+    <link rel="shortcut icon" type="x-icon" href="icon.png" />
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <h1>On sóc politicament?</h1>
+    <table class="table-grid">
+      <tbody>
+        <tr>
+          <th>economia</th>
+          <th colspan="2">societat</th>
+          <th>tipus d'estat</th>
+        </tr>
+        <tr valign="top">
+          <td width="25%">
+            <img src="images/igualtat.png" alt="" />
+            <img src="images/mercat-lliure.png" alt="" />
+          </td>
+          <td width="25%">
+            <img src="images/llibertat.png" alt="" />
+            <img src="images/poder.png" alt="" />
+          </td>
+          <td width="25%">
+            <img src="images/tradició.png" alt="" />
+            <img src="images/progressisme.png" alt="" />
+          </td>
+          <td width="25%">
+            <img src="images/independència.png" alt="" />
+            <img src="images/unitat.png" alt="" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="button start" onclick="location.href='demographic.html'">
+      Comença!
+    </button>
+    <hr />
+
+    <h2>Que és aquest test?</h2>
+    <p>
+      Aquest test és part d'un treball de recerca de 1r de batxillerat.
+      Consisteix en dividir les ideologies polítiques en 4 eixos independents,
+      en comptes d'un de sol que mesura "esquerra" i "dreta". Amb això
+      s'aconsegueix uns resultats més precisos, que, tot i no ser perfectes,
+      ajuden a comprendre millor la política.
+      <br />
+      Hi ha <span id="numOfQuestions"></span> preguntes al test.
+    </p>
+
+    <h2>Quins valors hi ha?</h2>
+    <p>
+      Hi ha quatre eixos, cadascún amb dos valors oposats. El primer eix és
+      d'economia, els dos següents són sobre la societat i l'últim és sobre el
+      tipus d'estat català. Els vuit valors són aquests:
+    </p>
+
+    <div class="explanation_bg">
+      <div class="spacer">
+        <div class="explanation_blurb_left">
+          <p class="value"><b style="color: #d32f2f;">IGUALTAT</b></p>
+          <p class="blurb-text">
+            El valor "igualtat" representa la voluntat de repartir
+            equitativament la riquesa al conjunt de la població. En el cas de
+            Catalunya, amb bastants sectors públics com la sanitat o la
+            educació, aquesta postura apostaria per més regulació de l'economia
+            o la nacionalització d'empreses privades a nivells més alts. A
+            l'extrem hi trobariem la voluntat de col·lectivitzar els mitjans de
+            producció.
+          </p>
+        </div>
+        <div class="explanation_axis">
+          <p class="axis_name">ECONOMIA</p>
+          <img class="arrow" src="double_arrow.svg" />
+        </div>
+        <div class="explanation_blurb_right">
+          <p class="value"><b style="color: #00796b;">MERCAT LLIURE</b></p>
+          <p class="blurb-text">
+            El valor "mercat lliure" vol basar l'economia en la
+            desregularització. En un context com el de Catalunya, amb una
+            socialdemocràcia, s'apostaria per la privatització d'alguns sectors,
+            una major facilitat per a la creació de noves empreses o la
+            eliminació de l'Impost sobre Successions i Donacions. A l'extrem hi
+            trobariem la privatització per complet de la sanitat i l'educació i
+            un sistema basat en el capitalsime més lliberal.
+          </p>
+        </div>
+      </div>
+
+      <div class="spacer">
+        <div class="explanation_blurb_left">
+          <p class="value"><b style="color: #fbc02d;">LLIBERTAT PERSONAL</b></p>
+          <p class="blurb-text">
+            El valor “llibertat personal” tendeix a enfatitzar les llibertats
+            civils en contra de la intervenció de l’estat a la vida dels
+            ciutadans (fora de l’economia). Voldria reduir la presència de la
+            policia al carrer. En el context de la pandèmia, s’apostaria per
+            menys restriccions del govern i més poder de decisió en les
+            persones.
+          </p>
+        </div>
+        <div class="explanation_axis">
+          <p class="axis_name">SOCIETAT</p>
+          <img class="arrow" src="double_arrow.svg" />
+        </div>
+        <div class="explanation_blurb_right">
+          <p class="value"><b style="color: #303f9f;">PODER DE L'ESTAT</b></p>
+          <p class="blurb-text">
+            El valor “poder de l’estat” representa la voluntat de tenir un estat
+            fort. Tendeix a recolzar la presència policial al carrer, la
+            vigilància als ciutadans, i en el context de la pandèmia més
+            restriccions del govern.
+          </p>
+        </div>
+      </div>
+      <div class="spacer">
+        <div class="explanation_blurb_left">
+          <p class="value"><b style="color: #689f38;">TRADICIÓ</b></p>
+          <p class="blurb-text">
+            El valor “tradició” vol mantenir els valors tradicionals i un codi
+            moral conservador. Tot i que no sempre, aquest valor està lligat amb
+            la religiositat. Tendeix a recolzar lleis en contra del col·lectiu
+            LGTB i la immigració, tot i que pot recolzar a un i estar en contra
+            d’un altre.
+          </p>
+        </div>
+        <div class="explanation_axis">
+          <p class="axis_name">SOCIETAT</p>
+          <img class="arrow" src="double_arrow.svg" />
+        </div>
+        <div class="explanation_blurb_right">
+          <p class="value"><b style="color: #7b1fa2;">PROGRESSISME</b></p>
+          <p class="blurb-text">
+            El valor “progressisme” defensa mesures basades en el canvi social.
+            Aquest valor es redefineix constantment: durant la revolució
+            americana podria suposar la separació de l’estat i l'església, a
+            principis dels 2000 la legalització del matrimoni homosexual i ara
+            una transició ecològica.
+          </p>
+        </div>
+      </div>
+      <div class="spacer">
+        <div class="explanation_blurb_left">
+          <p class="value"><b style="color: #f57c00;">INDEPENDÈNCIA</b></p>
+          <p class="blurb-text">
+            El valor “independència” defensa l’adquisició de competències per
+            part del govern català respecte Espanya. Pot defensar un model
+            federal i de forma més extrema la separació completa entre Catalunya
+            i Espanya en forma d’estat independent.
+          </p>
+        </div>
+        <div class="explanation_axis">
+          <p class="axis_name">TIPUS D'ESTAT</p>
+          <img class="arrow" src="double_arrow.svg" />
+        </div>
+        <div class="explanation_blurb_right">
+          <p class="value"><b style="color: #c60b1e;">UNITAT</b></p>
+          <p class="blurb-text">
+            El valor “unitat” representa la voluntat de mantenir Catalunya dins
+            d’Espanya. Pot defensar un model autonòmic i en nivells més extrems
+            la retirada de competències total.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script type="application/javascript" src="questions.js"></script>
+    <script type="text/javascript">
+      document.getElementById("numOfQuestions").innerHTML = questions.length;
+    </script>
+  </body>
+</html>
