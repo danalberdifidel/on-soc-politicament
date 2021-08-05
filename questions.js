@@ -123,7 +123,8 @@ window.questions = [
     }
   },
   {
-    question: "El sou mínim és bó i/o necessari.",
+    question:
+      "El toc de queda de les 22:00h fins a les 06:00 de l'octubre del 2020 fins al maig del 2021 va ser correcte i/o necessari.",
     effect: {
       econ: 0,
       indp: 0,
