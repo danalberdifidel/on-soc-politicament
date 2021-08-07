@@ -11,8 +11,8 @@ window.glossary = {
   // economy
   Communist: "Comunista",
   Socialist: "Socialista",
-  Social: "Socialdemòcrata",
-  Centrist: "Centrista",
+  Social: "Molt socialdemòcrata",
+  Centrist: "Centrista/Socialdemòcrata",
   Market: "Neoliberal",
   Capitalist: "Molt neoliberal",
   LaissezFaire: "Minarquista",

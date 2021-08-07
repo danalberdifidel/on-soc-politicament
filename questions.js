@@ -95,13 +95,12 @@ window.questions = [
     }
   },
   {
-    question:
-      "Els valors culturals catalans (llengua, tradicions, cultura…) s’haurien de mantenir i imposar als immigrants.",
+    question: "La immigració enriqueix la cultura catalana",
     effect: {
       econ: 0,
       indp: 0,
       govt: 0,
-      scty: -10
+      scty: 10
     }
   },
   {
