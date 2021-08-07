@@ -1,7 +1,7 @@
 window.questions = [
   {
     question:
-      "L’estat hauria de controlar els hospitals i centres sanitaris, sense deixar competència a empreses privades.",
+      "L’estat hauria de gestionar els hospitals i centres sanitaris, sense deixar competència a empreses privades.",
     effect: {
       econ: 10,
       indp: 0, // indp
@@ -38,7 +38,7 @@ window.questions = [
   },
   {
     question:
-      "L'Estat no sap ni pot garantir les necessitats de la societats de manera satisfactòria.",
+      "L'Estat no sap ni pot garantir les necessitats de la societat de manera satisfactòria.",
     effect: {
       econ: -10,
       indp: 0,
