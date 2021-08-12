@@ -11,15 +11,15 @@ window.glossary = {
   // economy
   Communist: "Comunista",
   Socialist: "Socialista",
-  Social: "Socialdemòcrata",
-  Centrist: "Centrista",
+  Social: "Molt socialdemòcrata",
+  Centrist: "Centrista/Socialdemòcrata",
   Market: "Neoliberal",
   Capitalist: "Molt neoliberal",
   LaissezFaire: "Minarquista",
 
   // diplomacy
-  Cosmopolitan: "Molt unitari",
-  Internationalist: "unitari",
+  Cosmopolitan: "Molt Centralista",
+  Internationalist: "Centralista",
   Peaceful: "Molt autonomista",
   Balanced: "Autonomista",
   Patriotic: "Federalista",

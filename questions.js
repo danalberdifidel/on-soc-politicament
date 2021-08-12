@@ -1,7 +1,7 @@
 window.questions = [
   {
     question:
-      "L’estat hauria de controlar els hospitals i centres sanitaris, sense deixar competència a empreses privades.",
+      "L’estat hauria de gestionar els hospitals i centres sanitaris, sense deixar competència a empreses privades.",
     effect: {
       econ: 10,
       indp: 0, // indp
@@ -38,7 +38,7 @@ window.questions = [
   },
   {
     question:
-      "L'Estat no sap ni pot garantir les necessitats de la societats de manera satisfactòria.",
+      "L'Estat no sap ni pot garantir les necessitats de la societat de manera satisfactòria.",
     effect: {
       econ: -10,
       indp: 0,
@@ -95,13 +95,12 @@ window.questions = [
     }
   },
   {
-    question:
-      "Els valors culturals catalans (llengua, tradicions, cultura…) s’haurien de mantenir i imposar als immigrants.",
+    question: "La immigració enriqueix la cultura catalana",
     effect: {
       econ: 0,
       indp: 0,
       govt: 0,
-      scty: -10
+      scty: 10
     }
   },
   {
@@ -123,7 +122,8 @@ window.questions = [
     }
   },
   {
-    question: "El sou mínim és bó i/o necessari.",
+    question:
+      "El toc de queda de les 22:00h fins a les 06:00 de l'octubre del 2020 fins al maig del 2021 va ser correcte i/o necessari.",
     effect: {
       econ: 0,
       indp: 0,
